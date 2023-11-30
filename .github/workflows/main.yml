@@ -18,9 +18,9 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
-      - name: Install Dependencies
+      - name: Install NPM Packages
         run: npm ci
-      - name: Install Playwright & Browsers
+      - name: Install Playwright Browsers & Dependencies
         run: npx playwright install --with-deps
       - name: Run E2E Tests
         run: npx playwright test
