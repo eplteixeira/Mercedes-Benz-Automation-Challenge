@@ -1,0 +1,16 @@
+{
+  "name": "mb-automation-challenge",
+  "version": "0.0.0",
+  "scripts": {
+    "ui": "playwright test --ui",
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:firefox": "playwright test --project=firefox",
+    "test:chromium": "playwright test --project=chromium"
+  },
+  "author": "Emanuel Teixeira",
+  "devDependencies": {
+    "@playwright/test": "^1.40.1",
+    "@types/node": "^20.10.1"
+  }
+}

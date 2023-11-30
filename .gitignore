@@ -1,0 +1,5 @@
+# Ignore folder
+node_modules
+test-resulsts
+playwright-report
+results.xml
