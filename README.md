@@ -1,3 +1,5 @@
+[![Playwright Tests](https://github.com/eplteixeira/Mercedes-Benz-Automation-Challenge/actions/workflows/main.yml/badge.svg)](https://github.com/eplteixeira/Mercedes-Benz-Automation-Challenge/actions/workflows/main.yml)
+
 # Setup
 1. Install [Microsoft Visual Studio Code IDE](https://code.visualstudio.com).
 1. (optional) NVM https://github.com/coreybutler/nvm-windows/releases
