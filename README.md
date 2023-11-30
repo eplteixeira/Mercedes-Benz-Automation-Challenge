@@ -1,5 +1,4 @@
 # Setup
-
 1. Install [Microsoft Visual Studio Code IDE](https://code.visualstudio.com).
 1. (optional) NVM https://github.com/coreybutler/nvm-windows/releases
 1. Install [Nodejs](https://nodejs.org/en/download/) on your system.
@@ -14,8 +13,9 @@
 1. Run `npm run test` - this way, will run the tests without a GUI interface
 
 ## Improvements / TODO
-- Code Structure
+- Code Structure (with POM)
 - Test Data
+- Locators
 
 ## References:
 - [Playwright Get started](https://playwright.dev/docs/intro)

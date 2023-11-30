@@ -1,20 +1,18 @@
 import { test, expect } from '@playwright/test';
+import { CookieManagerPager } from '../src/pages/cookies/cookies-management.page';
 import Utils from '../src/utils';
 
-test.describe('Enquire Mercedes-Benz', () => {
+test.describe('Enquire Now - Mercedes-Benz', () => {
   test('Validate the negative path of enquiring the highest price at Mercedes-Benz', async ({ page }) => {
     await page.goto('https://shop.mercedes-benz.com/en-au/shop/vehicle/srp/demo');
-
-    let cookieAcceptAll = page.locator('cmm-buttons-wrapper [data-test="handle-accept-all-button"]');
-    await cookieAcceptAll.click();
-    await cookieAcceptAll.waitFor({ state: 'hidden' });
-
-    // Continue is disable
-    await expect(page.locator('[data-test-id="state-selected-modal__close"]')).toBeDisabled();
+    const cookieMng = new CookieManagerPager(page);
+    await cookieMng.acceptAll();
 
     /**
      * PHASE 1 - Select your location
      */
+    // Continue is disable
+    await expect(page.locator('[data-test-id="state-selected-modal__close"]')).toBeDisabled();
     // State: New South Wales
     await page.selectOption('xpath=//div[contains(@data-test-id,"modal-popup")]//wb-select-control//select', {
       label: 'New South Wales'
