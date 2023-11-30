@@ -24,6 +24,8 @@ jobs:
         run: npx playwright install --with-deps
       - name: Run E2E Tests
         run: npx playwright test
+        env:
+          HOME: /root
       - name: Upload Test Results
         uses: actions/upload-artifact@v3
         if: always()
